@@ -1,0 +1,53 @@
+/* 
+    Document   : ms_linechart
+    Created on : Jun 24, 2013, 9:18:49 AM
+    Author     : igokarn
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+
+}
+
+.x.axis {
+    font-size: 10px;
+}
+.y.axis{
+    font-size: 10px;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+path.invisible {
+  fill: none;
+  stroke: rgba(0,0,0,0);
+  stroke-width: 8px;
+}
+
+text.label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+.grid path {
+      stroke-width: 0;
+}
